@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5988C9C8-F07D-4BBA-B238-A04ADD33588D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Kulturhane</RootNamespace>
+    <AssemblyName>Kulturhane</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>kültürhane.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAna.Designer.cs">
+      <DependentUpon>FrmAna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEmanetKitapVer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmanetKitapVer.Designer.cs">
+      <DependentUpon>FrmEmanetKitapVer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGiris.Designer.cs">
+      <DependentUpon>FrmGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKullaniciIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKullaniciIslemleri.Designer.cs">
+      <DependentUpon>FrmKullaniciIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRapor.Designer.cs">
+      <DependentUpon>FrmRapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmResimSec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmResimSec.Designer.cs">
+      <DependentUpon>FrmResimSec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTanimlaYayinevi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTanimlaYayinevi.Designer.cs">
+      <DependentUpon>FrmTanimlaYayinevi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTanimlaUye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTanimlaUye.Designer.cs">
+      <DependentUpon>FrmTanimlaUye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTanimlaKitapTuru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTanimlaKitapTuru.Designer.cs">
+      <DependentUpon>FrmTanimlaKitapTuru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTanimlaKitap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTanimlaKitap.Designer.cs">
+      <DependentUpon>FrmTanimlaKitap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTanimlaRaf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTanimlaRaf.Designer.cs">
+      <DependentUpon>FrmTanimlaRaf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTanimlaYazar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTanimlaYazar.Designer.cs">
+      <DependentUpon>FrmTanimlaYazar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Islemler.cs" />
+    <Compile Include="OleDbHelper.cs" />
+    <Compile Include="OrtakNokta.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAna.resx">
+      <DependentUpon>FrmAna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmanetKitapVer.resx">
+      <DependentUpon>FrmEmanetKitapVer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGiris.resx">
+      <DependentUpon>FrmGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKullaniciIslemleri.resx">
+      <DependentUpon>FrmKullaniciIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRapor.resx">
+      <DependentUpon>FrmRapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmResimSec.resx">
+      <DependentUpon>FrmResimSec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTanimlaYayinevi.resx">
+      <DependentUpon>FrmTanimlaYayinevi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTanimlaUye.resx">
+      <DependentUpon>FrmTanimlaUye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTanimlaKitapTuru.resx">
+      <DependentUpon>FrmTanimlaKitapTuru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTanimlaKitap.resx">
+      <DependentUpon>FrmTanimlaKitap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTanimlaRaf.resx">
+      <DependentUpon>FrmTanimlaRaf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTanimlaYazar.resx">
+      <DependentUpon>FrmTanimlaYazar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="kültürhane.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
